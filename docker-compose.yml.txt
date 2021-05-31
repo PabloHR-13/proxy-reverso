@@ -1,0 +1,27 @@
+version: '3.5'
+
+services:
+  nginx-proxy:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - /etc/nginx/vhost.d
+      - /usr/share/nginx/html
+  
+  sitio1.com:
+    image: nginx
+    restart: always
+    expose:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=sitio1.com
+
+  sitio2.com:
+    image: nginx
+    restart: always
+    expose:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=sitio2.com
