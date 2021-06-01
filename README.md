@@ -137,7 +137,7 @@ upstream backend {
 	}
 }
 ```
-En la parte de “ **server *IP*** ” cambiaremos la **IP** que tenga nuestro **contenedor** de la página web.
+En la parte de “ **server *IP*** ” cambiaremos la **IP** a la que tenga nuestro **contenedor** de la página web.
 
 
 Lo siguiente que haremos será borrar el archivo **“default.conf”** para que utilice el archivo que hemos
@@ -163,7 +163,7 @@ página para comprobar que cambia a la otra página web:
 
 ```
 - A la hora de agregar los archivos .yml hay que tener especial cuidado a la hora de escribirlo
-ya que si escribimos un espacio de más o de menos pues hacer que el archivo no se ejecute
+ya que si escribimos un espacio de más o de menos puede hacer que el archivo no se ejecute
 correctamente, también cuidado a la hora de escribir una palabra mal.
 - Cuidado con las rutas de los directorios, un fallo a la hora de escribir donde se sitúa nuestro
 archivo puede darnos un error el cual luego no pensemos que pueda ser ese el error que nos
